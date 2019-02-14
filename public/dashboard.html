@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Meal Planning App | Dashboard</title>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width initial-scale=1.0'>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/dashboardStyle.css">
+
+    <script type="text/javascript" src="js/wNumb.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/js/materialize.min.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+</head>
+
+<body>
+    <nav class="grey">
+        <div class="nav-wrapper container">
+            <a href="/" class="brand-logo"><img src='/images/thymeismoney.png'></a>
+            <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+            <ul class="right hide-on-med-and-down">
+                <li class="active"><a href="/dashboard">My Dashboard</a></li>
+                <li><a href="/myplan">My Plan</a></li>
+                <li><a href="/logout">Logout</a></li>
+            </ul>
+            <ul class="side-nav" id="mobile-demo">
+                <li class="active"><a href="/dashboard">My Dashboard</a></li>
+                <li><a href="/myplan">My Plan</a></li>
+                <li><a href="/logout">Logout</a></li>
+            </ul>
+        </div>
+    </nav>
+    <h4>Dashboard</h4>
+    <div class="row">
+        <div class="col s12 l4">
+            <div class="card small">
+                <div class="card-content">
+                    <div class="row title">
+                        <span class="col s10 card-title">My Nutrition Profile</span>
+                        
+                    </div>
+                    <div class="divider"></div>
+                    <div class="card-body" id="card-body-nutrient">
+                        
+                        <p class="larger"><span class="tag">Daily Total Calories: </span><span id="totalCalories"></span></p>
+                        <p class="nutrition"><span class="tag">Daily Protein: </span><span id="protein"></span></p>
+                        <p class="nutrition"><span class="tag">Daily Fat: </span><span id="fat"></span></p>
+                        <p class="nutrition"><span class="tag">Daily Carbs: </span><span id="carbs"></span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col s12 l4">
+            <div class="card small">
+                <div class="card-content">
+                    <div class="row title">
+                        <span class="card-title">My Account</span>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="card-body" id="card-body-account">
+                        <p><span class="tag">Name: </span><span id="name"></span></p>
+                        <p><span class="tag">Email: </span><span id="email"></span></p>
+                    </div>
+                </div>
+            </div> 
+        </div>
+        <div class="col s12 l4">
+            <div class="card small">
+                <div class="card-content">
+                    <div class="row title">
+                        <span class="card-title">Shopping List</span>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="card-body" id="card-body-shopping">
+                        <a href="#shopping-modal" class="waves-effect waves-light blue lighten-1 btn-large" id="shopping-list">Shopping List</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <!--Shopping List Modal-->
+    <div id="shopping-modal" class="modal modal-fixed-footer">
+        <div class="row">
+            <div class="col s12">
+                <div class="modal-content">
+                    <h3>Shopping List</h3>
+                    <div id="shoppingList"></div>
+                </div>
+                <div class="modal-footer">
+                    <a href="#!" class="modal-action modal-close waves-effect waves-red btn-flat">Close</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script type="text/javascript" src="js/shoppingList.js"></script>
+<script type="text/javascript" src="js/dashboard-load.js"></script>
+
+</body>
+</html>

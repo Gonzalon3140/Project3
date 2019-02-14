@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="theme-color" content="#2196F3">
+    <title>Meal Planning App</title>
+
+    <!-- CSS  -->
+    <link href="min/plugin-min.css" type="text/css" rel="stylesheet">
+    <link href="min/custom-min.css" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/home.css">
+
+     <!--YONNA added link for icons to work-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+</head>
+<body id="top" class="scrollspy">
+
+<!-- Pre Loader -->
+<div id="loader-wrapper">
+    <div id="loader"></div>
+ 
+    <div class="loader-section section-left"></div>
+    <div class="loader-section section-right"></div>
+ 
+</div>
+
+<!--Navigation-->
+ <div class="navbar-fixed">
+    <nav id="nav_f" class="default_color" role="navigation">
+        <div class="container">
+            <div class="nav-wrapper">
+                <!-- logo image -->
+                <a href="#" id="logo-container" class="brand-logo"><img src='/images/thymeismoney.png'></a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="#intro">What</a></li>
+                    <li><a href="#work">Why</a></li>
+                    <li><a href="#about">Who</a></li>
+                
+                    <!-- Modal Trigger Goes Below -->
+
+                    <li><a class="modal-trigger login-signup" href="#login-signup-modal">Log In / Signup</a></li>
+                    
+                    <!-- Modal Trigger Goes Above -->
+                </ul>
+                <ul id="nav-mobile" class="side-nav">
+                    <li><a href="#intro">What</a></li>
+                    <li><a href="#work">Why</a></li>
+                    <li><a href="#about">Who</a></li>
+                  
+
+                    <li><a class="modal-trigger login-signup" href="#login-signup-modal">Log In / Signup</a></li>
+                    
+                    <!-- Modal Trigger Goes Above (Responsive)-->
+                
+
+                </ul>
+            <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+            </div>
+        </div>
+    </nav>
+</div>
+
+<!-- Modal Structure -->
+
+<div id="login-signup-modal" class="modal">
+    <div class="row">
+        <div>
+            <ul class="tabs">
+                <li class="tab col s6"><a class="active modal-tab" href="#login">Login</a></li>
+                <li class="tab col s6"><a class="modal-tab" href="#signup">Sign Up</a></li>
+            </ul>
+        </div>
+        <div id="login" class="col s12">
+            <div class="modal-content">
+                <div class="row">
+                    <form class="col s12 login-form">
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <input id="login-email" type="email" class="validate">
+                                <label for="login-email" data-error="invalid">Email Address</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <input id="login-password" type="password" class="validate">
+                                <label for="login-password">Password</label>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <a href="#!" class="modal-action modal-close waves-effect waves-red btn-flat">Close</a>
+                <button type="submit" class="modal-action waves-effect waves-green btn-flat blue lighten-1 action" id="login-button">Login</button>
+            </div>
+        </div>
+        <div id="signup" class="col s12">
+            <div class="modal-content">
+                <div class="row">
+                    <form class="col s12 signup-form">
+                        <div class="row">
+                            <div class="input-field col s6">
+                                <input id="first-name" type="text" class="validate">
+                                <label for="first-name">First Name</label>
+                            </div>
+                            <div class="input-field col s6">
+                                <input id="last-name" type="text" class="validate">
+                                <label for="last-name">Last Name</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <input id="signup-email" type="email" class="validate">
+                                <label for="signup-email">Email</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <input id="signup-password" type="password" class="validate">
+                                <label for="signup-password">Password</label>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <a href="#!" class="modal-action modal-close waves-effect waves-red btn-flat">Close</a>
+                <button type="submit" class="modal-action waves-effect waves-green btn-flat blue lighten-1 action" id="signup-button">Sign Up</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Yonna Slider -->
+<div class="section no-pad-bot parallax-container top-image" id="index-banner">
+      <div class="slider">
+        <ul class="slides">    
+            <li>
+              <img class="sliderimage" src="/images/save_money.jpg"> 
+              <div class="caption center-align">
+                <h2 style="color:black;">Save money.</h2>
+              </div>
+            </li>
+            <li>
+              <img class="sliderimage" src="/images/clock.jpg"> 
+              <div class="caption center-align">
+                <h2 style="color:black;">Save time.</h2>
+              </div>
+            </li>
+            <li>
+              <img class="sliderimage" src="/images/salad_bowl.jpg"> 
+              <div class="caption right-align">
+                <h2 style="color:black;">Eat well.</h2>
+              </div>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<div class="section scrollspy" id="work">
+    <div class="container">
+        <h2 class="header text_b">Meal Planning: Easy as 1-2-3</h2>
+        <div class="row">
+            <div class="col s12 m4 l4">
+                <div class="card">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        
+                    <img class="activator features" src="/images/thymeismoney.png">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4">Meal Plan<i class="mdi-navigation-more-vert right"></i></span>
+                        
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title grey-text text-darken-4">Meal Plan<i class="mdi-navigation-close right"></i></span>
+                        <p>Step 1: Use our clickable Meal Plan calendar to search for nutritious meals. Create your meal plan for breakfast, lunch and dinner.  The search function takes you to a comprehensive recipe database.  </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m4 l4">
+                <div class="card">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        
+                        <img class="activator features" src="/images/blank_notebook.jpg">
+                    </div>
+
+                    <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4">Shopping List <i class="mdi-navigation-more-vert right"></i></span>
+                        
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title grey-text text-darken-4">Shopping List<i class="mdi-navigation-close right"></i></span>
+                        <p>Step 2: Once your meals have been selected, the app will create a custom shopping list for you to save or print. Here's where you save yourself a ton of time!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m4 l4">
+                <div class="card">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        
+                        <img class="activator features" src="/images/sliced_kiwifruit.jpg">
+                        </div>
+                    <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4">Calories<i class="mdi-navigation-more-vert right"></i></span>
+                        
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title grey-text text-darken-4">Calories<i class="mdi-navigation-close right"></i></span>
+                        <p>Step 3: Are you concerned about how many calories each meal includes? Our app will total those calories for you.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--About Us-->
+<div class="section scrollspy" id="about">
+    <div class="container">
+        <h2 class="header text_b"> Why use Thyme Is Money? </h2>
+        <div class="row">
+            <div class="col l6 s12">
+                <br>
+                <br>
+                <p class="black-text text-lighten-4">According to Harvard School of Public Health, there are numerous benefits associated with weekly meal planning.  In fact, planning your meals can be a "helpful healthy eating strategy". In this crazy work-a-day world, we often think of food as something we "have to" take care of and quickly grab fast food rather than sitting down to a balanced meal made with fresh ingredients --- meal planning to end this cycle.  Harvard notes there are other important benefits of meal prep:</p>
+                <ul>
+                    <li>Can help save money</li>
+                    <li>Can ultimately save time</li>
+                    <li>Can help with weight control, as you decide the ingredients and portions served</li>
+                    <li>Can contribute to an overall more nutritionally balanced diet</li>
+                    <li>Can reduce stress as you avoid last minute decisions about what to eat, or rushed preparation</li>
+                </ul>    
+            </div>
+            <div class="col l6 s12">
+                <img src='/images/thymeismoney.png'>
+            </div>
+        </div>
+    </div>           
+</div>
+    <!--  Scripts-->
+    <script src="min/plugin-min.js"></script>
+    <script src="min/custom-min.js"></script>
+    <script type="text/javascript" src="js/home.js"></script>
+    <!--Import jQuery before materialize.js-->
+      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+      <!-- Import materialize -->
+      <script type="text/javascript" src="js/materialize.js"></script>
+      <!-- jquery -->
+      <script type="text/javascript">
+        $(document).ready(function(){
+        $('.slider').slider();
+            });
+        // Pause slider
+    $('.slider').slider('pause');
+    // Start slider
+    $('.slider').slider('start');
+    // Next slide
+    $('.slider').slider('next');
+    // Previous slide
+    $('.slider').slider('prev');
+     
+     
+      $(document).ready(function(){
+      $('.carousel').carousel();
+    });
+    
+     </script>
+
+    </body>
+</html>
