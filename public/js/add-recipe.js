@@ -10,8 +10,8 @@ console.log('inside add-recipe.js');
 				url: url,
 				meal: $('#mealdrop').val(),
 				tags: $('#recipe-tags').val().split(' '),
-				vegetarian: $('#vegetarian-check').prop('checked'),
-				vegan: $('#vegan-check').prop('checked')
+				// vegetarian: $('#vegetarian-check').prop('checked'),
+				// vegan: $('#vegan-check').prop('checked')
 			}
 		}).done(function(response){
 			Materialize.toast('Recipe added!', 4000);
@@ -22,8 +22,8 @@ console.log('inside add-recipe.js');
 	function clearAll(){
 		$('#recipe-url').val('');
 		$('#recipe-tags').val('');
-		$('#vegetarian-check').prop('checked', false);
-		$('#vegan-check').prop('checked', false);
+		// $('#vegetarian-check').prop('checked', false);
+		// $('#vegan-check').prop('checked', false);
 	}
 
 })();

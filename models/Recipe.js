@@ -19,18 +19,18 @@ var Recipe = new Schema({
 		type: Number
 	},
 
-	protein: {
-		type: Number
-	},
-	carbs: {
-		type: Number
-	},
-	fat: {
-		type: Number
-	},
-	calories: {
-		type: Number
-	},
+	// protein: {
+	// 	type: Number
+	// },
+	// carbs: {
+	// 	type: Number
+	// },
+	// fat: {
+	// 	type: Number
+	// },
+	// calories: {
+	// 	type: Number
+	// },
 
 	ingredients: [{
 		amount: String,
@@ -44,12 +44,12 @@ var Recipe = new Schema({
 	meal: {
 		type: String
 	},
-	vegetarian: {
-		type: Boolean
-	},
-	vegan: {
-		type: Boolean
-	}
+	// vegetarian: {
+	// 	type: Boolean
+	// },
+	// vegan: {
+	// 	type: Boolean
+	// }
 })
 
 module.exports = mongoose.model('Recipe', Recipe);
