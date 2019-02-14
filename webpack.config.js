@@ -1,39 +1,31 @@
 var webpack = require("webpack");
 var path = require("path");
 
-var config = {
-	entry: path.resolve("./src/index.js"),
+module.exports = {
+	entry: './src/index.js',
 	output: {
-		path: path.resolve('./public/js'),
-		filename: "bundle.js"
+	  path: path.join(__dirname, 'dist'),
+	  filename: 'bundle.js'
 	},
-	resolve: {
-    	extensions: ['', '.js', '.jsx']
-  	},
-
+	devtool: 'source-map',
 	module: {
-		loaders: [
-			{
-					test: /\.jsx?$/, 
-					include: /src/,
-					loader: "babel-loader",
-					query: {
-						presets: ["react", "es2015", "stage-0"]
-					}
-				},
-
-			{
-               test:/\.css$/,
-               loader:'style-loader!css-loader'
-           }
-		]
+	  rules: [
+		{
+		  test: /\.js$/,
+		  loader: 'babel-loader',
+		  exclude: /node_modules/,
+		  options: {
+			presets: ['@babel/preset-env', '@babel/preset-react'],
+			plugins: [
+			  '@babel/plugin-proposal-class-properties'
+			]
+		  }
+		},
+		{
+		  test: /\.css$/,
+		  use: ['style-loader', 'css-loader'],
+		  exclude: /node_modules/
+		}
+	  ]
 	},
-
-	node: {
-		fs: 'empty'
-	},
-	devtool: "eval-source-map"
-
-};
-
-module.exports = config;
+	}

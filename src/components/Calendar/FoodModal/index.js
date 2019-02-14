@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import Loading from 'react-loading'
 import Modal from 'react-modal';
-import ArrowRightIcon from 'react-icons/lib/fa/arrow-circle-right';
+import { ArrowRightIcon } from 'react-icons/fa';
 
 // Our Dependencies
 import { capitalize } from '../../../utils/helpers'

@@ -2,8 +2,8 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux';
 import Modal from 'react-modal';
-import List from 'react-icons/lib/fa/edit';
-import CalendarIcon from 'react-icons/lib/fa/sticky-note-o';
+import { List } from 'react-icons/fa';
+import { CalendarIcon } from 'react-icons/fa';
 
 // Our Dependencies
 import { fetchRecipes } from '../../utils/api';
