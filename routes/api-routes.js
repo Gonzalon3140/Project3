@@ -4,10 +4,6 @@ var passport = require('passport');
 
 // Set up and connect to database
 const mongoose = require('mongoose');
-//require from calorie calculation @ utils
-var caloriesUtil = require('./caloriesUtil');
-var calculateFFF = caloriesUtil.calculateFFF;
-var calculatePFC = caloriesUtil.calculatePFC;
 
 // Require all models
 var User = require('../models/User.js');
